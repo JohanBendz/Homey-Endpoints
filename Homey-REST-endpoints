@@ -1,0 +1,46 @@
+Homey v2 REST API Endpoints @ http://<HOMEY_IP>/api/manager/
+https://apps.developer.athom.com/tutorial-Web%20Api.html
+
+Endpoints:
+
+# Devices
+GET http://<HOMEY_IP>/api/manager/devices/device
+GET http://<HomeyIP>/api/manager/devices/device/<device_id>/
+
+# Alarms
+GET http://<HOMEY_IP>/api/manager/alarms/alarm/
+
+# Zones
+GET http://<HOMEY_IP>/api/manager/zones/
+
+# Location
+GET http://<HomeyIP>/api/manager/geolocation/
+
+# Presence
+GET http://<HomeyIP>/api/manager/presence/
+
+# Flows
+GET http://<HomeyIP>/api/manager/flow/flow/
+GET http://<HomeyIP>/api/manager/flow/flow/<flow_id>/
+
+# Speach output
+GET http://YOUR-HOMEY-IP/api/manager/speech-output/
+
+# Apps
+GET https://<HOMEY_IP>/api/manager/apps/app
+GET https://<HOMEY_IP>/api/manager/apps/app/<APP_ID> (example: https://<HOMEY_IP>/api/manager/apps/app/com.fibaro)
+
+# Users
+GET https://<HOMEY_IP>/api/manager/users/user/
+
+# Notifications
+Get https://<HOMEY_IP>/api/manager/api/manager/notifications/notification/
+
+# System
+GET https://<HOMEY_IP>/api/manager/system/
+
+# Switch on:
+PUT { "value": true } TO http://<HOMEY_IP>/api/manager/devices/device/<DEVICE_ID>/capability/onoff
+
+# Switch off:
+PUT { "value": false } TO http://<HOMEY_IP>/api/manager/devices/device/<DEVICE_ID>/capability/onoff
