@@ -1,4 +1,4 @@
-Homey v2 REST API Endpoints @ http://<HOMEY_IP>/api/manager/
+Homey v2 REST API Endpoints @ http://<HOMEY_IP>/api/manager/ (?bearer_token=<YOUR_BEARER_TOKEN>)
 https://apps.developer.athom.com/tutorial-Web%20Api.html
 
 Endpoints:
