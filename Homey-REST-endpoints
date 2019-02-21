@@ -7,14 +7,32 @@ Endpoints:
 GET http://<HOMEY_IP>/api/manager/devices/device
 GET http://<HomeyIP>/api/manager/devices/device/<device_id>/
 
+# Drivers
+GET http://<HOMEY_IP>/api/manager/devices/drivers
+
 # Alarms
 GET http://<HOMEY_IP>/api/manager/alarms/alarm/
 
 # Zones
 GET http://<HOMEY_IP>/api/manager/zones/
 
+# Mobile
+GET http://<HOMEY_IP>/api/manager/mobile/
+
+# Notifications
+GET http://<HOMEY_IP>/api/manager/notifications/notification/
+
+# Reminders
+GET http://<HOMEY_IP>/api/manager/reminder/reminder/
+
+# Language and unit settings
+GET http://<HOMEY_IP>/api/manager/i18n/
+
 # Location
 GET http://<HomeyIP>/api/manager/geolocation/
+
+# Cloud state
+GET http://<HomeyIP>/api/manager/cloud/state/
 
 # Presence
 GET http://<HomeyIP>/api/manager/presence/
@@ -27,20 +45,17 @@ GET http://<HomeyIP>/api/manager/flow/flow/<flow_id>/
 GET http://YOUR-HOMEY-IP/api/manager/speech-output/
 
 # Apps
-GET https://<HOMEY_IP>/api/manager/apps/app
+GET https://<HOMEY_IP>/api/manager/apps/app/
 GET https://<HOMEY_IP>/api/manager/apps/app/<APP_ID> (example: https://<HOMEY_IP>/api/manager/apps/app/com.fibaro)
 
 # Users
 GET https://<HOMEY_IP>/api/manager/users/user/
 
-# Notifications
-Get https://<HOMEY_IP>/api/manager/api/manager/notifications/notification/
-
 # System
 GET https://<HOMEY_IP>/api/manager/system/
 
 # Switch on:
-PUT { "value": true } TO http://<HOMEY_IP>/api/manager/devices/device/<DEVICE_ID>/capability/onoff
+PUT { "value": true } TO http://<HOMEY_IP>/api/manager/devices/device/<DEVICE_ID>/capability/onoff/
 
 # Switch off:
-PUT { "value": false } TO http://<HOMEY_IP>/api/manager/devices/device/<DEVICE_ID>/capability/onoff
+PUT { "value": false } TO http://<HOMEY_IP>/api/manager/devices/device/<DEVICE_ID>/capability/onoff/
