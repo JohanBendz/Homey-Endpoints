@@ -3,18 +3,32 @@ https://apps.developer.athom.com/tutorial-Web%20Api.html
 
 Endpoints:
 
+# Alarms
+GET http://<HOMEY_IP>/api/manager/alarms/alarm/
+
+# Apps
+GET https://<HOMEY_IP>/api/manager/apps/app/
+GET https://<HOMEY_IP>/api/manager/apps/app/<APP_ID> (eg. com.fibaro)
+
+# Cloud state
+GET http://<HomeyIP>/api/manager/cloud/state/
+
 # Devices
 GET http://<HOMEY_IP>/api/manager/devices/device
-GET http://<HomeyIP>/api/manager/devices/device/<device_id>/
+GET http://<HOMEY_IP>/api/manager/devices/device/<DEVICE_ID>/
 
 # Drivers
 GET http://<HOMEY_IP>/api/manager/devices/drivers
 
-# Alarms
-GET http://<HOMEY_IP>/api/manager/alarms/alarm/
+# Flows
+GET http://<HOMEY_IP>/api/manager/flow/flow/
+GET http://<HOMEY_IP>/api/manager/flow/flow/<FLOW_ID>/
 
-# Zones
-GET http://<HOMEY_IP>/api/manager/zones/
+# Language and unit settings
+GET http://<HOMEY_IP>/api/manager/i18n/
+
+# Location
+GET http://<HOMEY_IP>/api/manager/geolocation/
 
 # Mobile
 GET http://<HOMEY_IP>/api/manager/mobile/
@@ -22,40 +36,26 @@ GET http://<HOMEY_IP>/api/manager/mobile/
 # Notifications
 GET http://<HOMEY_IP>/api/manager/notifications/notification/
 
+# Presence
+GET http://<HOMEY_IP>/api/manager/presence/
+
 # Reminders
 GET http://<HOMEY_IP>/api/manager/reminder/reminder/
 
-# Language and unit settings
-GET http://<HOMEY_IP>/api/manager/i18n/
-
-# Location
-GET http://<HomeyIP>/api/manager/geolocation/
-
-# Cloud state
-GET http://<HomeyIP>/api/manager/cloud/state/
-
-# Presence
-GET http://<HomeyIP>/api/manager/presence/
-
-# Flows
-GET http://<HomeyIP>/api/manager/flow/flow/
-GET http://<HomeyIP>/api/manager/flow/flow/<flow_id>/
-
 # Speach output
-GET http://YOUR-HOMEY-IP/api/manager/speech-output/
-
-# Apps
-GET https://<HOMEY_IP>/api/manager/apps/app/
-GET https://<HOMEY_IP>/api/manager/apps/app/<APP_ID> (example: https://<HOMEY_IP>/api/manager/apps/app/com.fibaro)
+GET http://<HOMEY_IP>/api/manager/speech-output/
 
 # Users
 GET https://<HOMEY_IP>/api/manager/users/user/
-
-# System
-GET https://<HOMEY_IP>/api/manager/system/
 
 # Switch on:
 PUT { "value": true } TO http://<HOMEY_IP>/api/manager/devices/device/<DEVICE_ID>/capability/onoff/
 
 # Switch off:
 PUT { "value": false } TO http://<HOMEY_IP>/api/manager/devices/device/<DEVICE_ID>/capability/onoff/
+
+# System
+GET https://<HOMEY_IP>/api/manager/system/
+
+# Zones
+GET http://<HOMEY_IP>/api/manager/zones/
