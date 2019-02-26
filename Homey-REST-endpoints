@@ -15,11 +15,11 @@ GET https://<HOMEY_IP>/api/manager/apps/app/<APP_ID> (eg. com.fibaro)
 GET http://<HomeyIP>/api/manager/cloud/state/
 
 # Devices
-GET http://<HOMEY_IP>/api/manager/devices/device
+GET http://<HOMEY_IP>/api/manager/devices/device/
 GET http://<HOMEY_IP>/api/manager/devices/device/<DEVICE_ID>/
 
 # Drivers
-GET http://<HOMEY_IP>/api/manager/devices/drivers
+GET http://<HOMEY_IP>/api/manager/devices/drivers/
 
 # Flows
 GET http://<HOMEY_IP>/api/manager/flow/flow/
