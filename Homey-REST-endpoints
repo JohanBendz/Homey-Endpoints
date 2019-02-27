@@ -31,6 +31,11 @@ GET http://<HOMEY_IP>/api/manager/i18n/
 # Location
 GET http://<HOMEY_IP>/api/manager/geolocation/
 
+# Logic
+GET http://<HOMEY_IP>/api/logic/variable/
+GET http://<HOMEY_IP>/api/logic/variable/<VARIABLE_ID>
+PUT { "value": value } TO http://<HOMEY_IP>/api/manager/logic/variable/<VARIABLE_ID>/ 
+
 # Mobile
 GET http://<HOMEY_IP>/api/manager/mobile/
 
@@ -60,3 +65,5 @@ GET https://<HOMEY_IP>/api/manager/system/
 
 # Zones
 GET http://<HOMEY_IP>/api/manager/zones/
+
+
