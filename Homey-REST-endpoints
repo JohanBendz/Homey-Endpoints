@@ -63,7 +63,7 @@ PUT { "value": false } TO http://<HOMEY_IP>/api/manager/devices/device/<DEVICE_I
 # System
 GET https://<HOMEY_IP>/api/manager/system/
 
-# System Reboot
+# System Reboot // Use with caution!
 POST https://<HOMEY_IP>/api/manager/system/reboot/
 
 # Zones
