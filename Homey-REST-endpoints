@@ -98,6 +98,9 @@ GET http://<HOMEY_IP>/api/manager/zigbee/state/
 # Z-Wave
 GET http://<HOMEY_IP>/api/manager/zwave/state/
 GET http://<HOMEY_IP>/api/manager/zwave/log/
+POST http://<HOMEY_IP>/api/manager/zwave/command/
+- heal: payload {command: "heal", opts: {nodeId: <NODE_ID>}}
+- test: payload {command: "sendData", opts: "<NODE_ID>,0x20,0x00"} 
 
 # Zones
 GET http://<HOMEY_IP>/api/manager/zones/
